@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="icon" type="image/png" href="acount-form/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="acount-form/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="acount-form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="acount-form/vendor/animate/animate.css">	
+	<link rel="stylesheet" type="text/css" href="acount-form/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="acount-form/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="acount-form/css/util.css">
+	<link rel="stylesheet" type="text/css" href="acount-form/css/main.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="./css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/slicknav.min.css" type="text/css">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="header__logo">
+						<div class="group_content_logo">
+							<a href="./index.html"><img src="img/logo.png" class="logo" alt=""></a>
+							<b class="name_logo">SAIGON COMPUTER</b>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 header__top">
+					<div class="header__group">
+						<div class="menu__search__phone">
+							<div class="menu__search__phone__icon">
+								<i class="fa fa-phone"></i>
+							</div>
+							<div class="menu__search__phone__text">
+								<span>Hotline</span>
+								<h5>+84 1900 xxxx</h5>
+							</div>
+						</div>
+					</div>
+					<div class="menu__search__form">
+						<form action="#">
+							<input type="text" placeholder="Bạn tìm gì?">
+							<button type="submit" class="site-btn">TÌM KIẾM</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="title-form">
+					<ul>
+						<li class="active" data-filter=".login">
+							Đăng nhập
+						</li>
+						<li data-filter=".register">
+							Đăng ký
+						</li>
+					</ul>
+				</div>
+				<div class="content-form">
+					<form class="login100-form validate-form mix login" id="form_login" method="post" name="form_login">
+						<div class="wrap-input100 validate-input">
+							<div class="input100">
+								<div class="col_icon"><i class="fa fa-envelope"></i></div>
+								<input type="text" id="email_login" name="email" placeholder="Email"></input>
+							</div>
+						</div>
+	
+						<div class="wrap-input100 validate-input">
+							<div class="input100">
+								<div class="col_icon"><i class="fa fa-lock"></i></div>
+								<input type="password" id="password_login" name="pass" placeholder="Mật khẩu"></input>
+							</div>
+						</div>
+						
+						<div class="container-login100-form-btn">
+							<input type="button" class="login100-form-btn" value="Đăng nhập" id="submit" onclick="login()"/>
+						</div>
+					</form>
+
+					<form class="login100-form validate-form mix register" style="display: none" id="form_register" name="form_register" method="post">
+						<div class="wrap-input100 validate-input">
+							<div class="input100">
+								<div class="col_icon"><i class="fa fa-envelope"></i></div>
+								<input type="text" id="email_register" name="email" placeholder="Email"></input>
+							</div>
+						</div>
+	
+						<div class="wrap-input100 validate-input">
+							<div class="input100">
+								<div class="col_icon"><i class="fa fa-lock"></i></div>
+								<input type="password" id="password_register" name="pass" placeholder="Mật khẩu"></input>
+							</div>
+						</div>
+
+						<div class="wrap-input100 validate-input">
+							<div class="input100">
+								<div class="col_icon"><i class="fa fa-lock"></i></div>
+								<input type="password" id="confirm_password" name="pass" placeholder="Xác nhận mật khẩu"></input>
+							</div>
+						</div>
+						
+						<div class="container-login100-form-btn">
+							<input type="button" class="login100-form-btn" value="Đăng ký" id="submit" onclick="register()"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="acount-form/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="acount-form/vendor/bootstrap/js/popper.js"></script>
+	<script src="acount-form/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="acount-form/vendor/select2/select2.min.js"></script>
+	<script src="acount-form/vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="acount-form/js/main.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+	<script src="acount-form/js/action_form.js"></script>
+
+</body>
+</html>
