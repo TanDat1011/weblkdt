@@ -1034,13 +1034,11 @@ ol {
 	margin-bottom: 70px;
 }
 
-/*---------------------
-  Breadcrumb
------------------------*/
-
 .breadcrumb-section {
 	display: flex;
 	align-items: center;
+	width: 100%;
+	margin: 30px 0;
 	padding: 45px 0 40px;
 }
 
@@ -1707,6 +1705,21 @@ ol {
 	margin-bottom: 15px;
 }
 
+.product__details__text .product__details__price .sys_price {
+	font-size: 20px;
+	color: #a8a5a5;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-decoration: line-through;
+}
+
+.product__details__text .product__details__price .discount {
+	font-size: 16px;
+	color: #dd2222;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
 .product__details__text p {
 	margin-bottom: 45px;
 }
@@ -1728,7 +1741,6 @@ ol {
 .product__details__text ul {
 	border-top: 1px solid #ebebeb;
 	padding-top: 40px;
-	margin-top: 50px;
 }
 
 .product__details__text ul li {
@@ -1765,7 +1777,7 @@ ol {
 
 .product__details__quantity {
 	display: inline-block;
-	margin-right: 6px;
+	margin-top: 20px;
 }
 
 .pro-qty {
@@ -1860,11 +1872,37 @@ ol {
 	color: #666666;
 }
 
+.product__details__tab .product__details__tab__desc img {
+	display: flex;
+	width: 100%;
+}
+
+.product__details__tab .product__details__tab__desc table {
+	color: #666666;
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+.product__details__tab .product__details__tab__desc table td, 
+.product__details__tab .product__details__tab__desc table th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+.product__details__tab .product__details__tab__desc table tr .col_title {
+	max-width: 200px;
+}
+  
+.product__details__tab .product__details__tab__desc table tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
 /*---------------------
   Shop Details
 -----------------------*/
 
-.related-product {
+.other-product {
 	padding-bottom: 30px;
 }
 
