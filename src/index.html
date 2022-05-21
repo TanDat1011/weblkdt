@@ -42,7 +42,7 @@
         </div>
         <div class="drawer__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                <li><a href="cart-step1.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">Tổng tiền: <span>4.450.000đ</span></div>
         </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="header__cart">
                             <ul>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                <li><a href="cart-step1.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                                 <li><a href="#"><i class="fa fa-user"></i>Kim Ngân</a></li>
                             </ul>
                         </div>
@@ -132,16 +132,36 @@
                             <span>Danh mục</span>
                         </div>
                         <ul>
-                            <li><a href="#">Mainboard - Bo mạch</a></li>
-                            <li><a href="#">VGA - Card đồ hoạ</a></li>
-                            <li><a href="#">Màn hình</a></li>
-                            <li><a href="#">Case - Thùng máy</a></li>
+                            <li><a href="category.html">Mainboard - Bo mạch</a></li>
+                            <li><a href="category.html">VGA - Card đồ hoạ</a></li>
+                            <li><a href="category.html">Màn hình</a></li>
+                            <li><a href="category.html">Case - Thùng máy</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <div class="menu__item">
-                        <img src="img/hero/event.jpg"/>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="img/banner/banner-1.jpg" style="width:100%" />
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="img/banner/banner-2.jpg" style="width:100%">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="img/banner/banner-3.jpg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="img/banner/banner-4.jpg" style="width:100%">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -406,8 +426,22 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
-
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 4000);
+        }
+        </script>
 
 </body>
 

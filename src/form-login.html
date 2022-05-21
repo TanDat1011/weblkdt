@@ -7,8 +7,7 @@
 	<link rel="icon" type="image/png" href="acount-form/images/icons/favicon.ico"/>
 	<link rel="stylesheet" type="text/css" href="acount-form/vendor/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="acount-form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="acount-form/vendor/animate/animate.css">	
-	<link rel="stylesheet" type="text/css" href="acount-form/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="acount-form/vendor/animate/animate.css">
 	<link rel="stylesheet" type="text/css" href="acount-form/vendor/select2/select2.min.css">
 	<link rel="stylesheet" type="text/css" href="acount-form/css/util.css">
 	<link rel="stylesheet" type="text/css" href="acount-form/css/main.css">
@@ -25,7 +24,48 @@
 	<link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <body>
+	<!-- Drawer -->
+	<div class="drawer__menu__overlay"></div>
+	<div class="drawer__menu__wrapper">
+		<div class="drawer__menu__logo">
+			<a href="#"><img src="img/logo.png" alt=""></a>
+		</div>
+		<div class="drawer__menu__widget">
+			<div class="header__top__right__auth">
+				<a href="#"><i class="fa fa-user"></i> Tài khoản</a>
+			</div>
+		</div>
+		<nav class="drawer__menu__nav mobile-menu">
+			<ul>
+				<li>Danh mục sản phẩm
+					<ul class="header__menu__dropdown">
+						<li><a href="#">Mainboard - Bo mạch</a></li>
+						<li><a href="#">VGA - Card đồ hoạ</a></li>
+						<li><a href="#">Màn hình</a></li>
+						<li><a href="#">Case - Thùng máy</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="mobile-menu-wrap"></div>
+		<div class="header__top__right__social">
+			
+		</div>
+		<div class="drawer__menu__contact">
+			<ul>
+				<li><i class="fa fa-envelope"></i> saigoncomputer@gmail.com</li>
+				<li><i class="fa fa-phone"></i> +84 1900 XXXX</li>
+				<li>
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					Hi - END - PC
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Drawer End -->
 
+	<!-- Header Section Begin -->
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -48,6 +88,11 @@
 								<h5>+84 1900 xxxx</h5>
 							</div>
 						</div>
+						<div class="header__cart">
+							<ul>
+								<li><a href="#"><i class="fa fa-user"></i>Tài khoản</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="menu__search__form">
 						<form action="#">
@@ -57,8 +102,12 @@
 					</div>
 				</div>
 			</div>
+			<div class="drawer__open">
+				<i class="fa fa-bars"></i>
+			</div>
 		</div>
 	</header>
+	<!-- Header Section End -->
 	
 	<div class="limiter">
 		<div class="container-login100">
@@ -139,6 +188,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 	<script src="acount-form/js/action_form.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

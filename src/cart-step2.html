@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SaiGon Computer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Loading -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Drawer -->
+    <div class="drawer__menu__overlay"></div>
+    <div class="drawer__menu__wrapper">
+        <div class="drawer__menu__logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="drawer__menu__widget">
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Kim Ngân</a>
+            </div>
+        </div>
+        <div class="drawer__menu__cart">
+            <ul>
+                <li><a href="cart-step1.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng tiền: <span>4.450.000đ</span></div>
+        </div>
+        <nav class="drawer__menu__nav mobile-menu">
+            <ul>
+                <li>Danh mục sản phẩm
+                    <ul class="header__menu__dropdown">
+                        <li><a href="#">Mainboard - Bo mạch</a></li>
+                        <li><a href="#">VGA - Card đồ hoạ</a></li>
+                        <li><a href="#">Màn hình</a></li>
+                        <li><a href="#">Case - Thùng máy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            
+        </div>
+        <div class="drawer__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> saigoncomputer@gmail.com</li>
+                <li><i class="fa fa-phone"></i> +84 1900 XXXX</li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    Hi - END - PC
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Drawer End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <div class="group_content_logo">
+                            <a href="./index.html"><img src="img/logo.png" class="logo" alt=""></a>
+                            <b class="name_logo">SAIGON COMPUTER</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 header__top">
+                    <div class="header__group">
+                        <div class="menu__search__phone">
+                            <div class="menu__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="menu__search__phone__text">
+                                <span>Hotline</span>
+                                <h5>+84 1900 xxxx</h5>
+                            </div>
+                        </div>
+                        <div class="header__cart">
+                            <ul>
+                                <li><a href="cart-step1.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                <li><a href="#"><i class="fa fa-user"></i>Kim Ngân</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu__search__form">
+                        <form action="#">
+                            <input type="text" placeholder="Bạn tìm gì?">
+                            <button type="submit" class="site-btn">TÌM KIẾM</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="drawer__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Checkout Section Begin -->
+    <section class="checkout spad">
+        <div class="container">
+            <div class="checkout__form">
+                <h4>Thông tin nhận hàng</h4>
+                <form id="form_order" name="form_order" method="post">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="checkout__input">
+                                        <p>Họ tên khách hàng<span>*</span></p>
+                                        <input type="text" id="nameCustomer" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Địa chỉ<span>*</span></p>
+                                <input type="text" id="addressCustomer" />
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Điện thoại<span>*</span></p>
+                                        <input type="text" id="phoneCustomer" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="checkout__input">
+                                        <p>Email<span>*</span></p>
+                                        <input type="text" id="emailCustomer" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout__input">
+                                <p>Ghi chú đơn hàng</p>
+                                <textarea rows="4" cols="100" id="note"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="checkout__order">
+                                <h4>Chi tiết đơn hàng</h4>
+                                <div class="checkout__order__products">Sản phẩm<span>Tổng tiền</span></div>
+                                <ul>
+                                    <li>Màn hình LCD 27” Sams... <span>4.450.000đ</span></li>
+                                    <li>Mainboard Asus ROG St... <span>5.500.000đ</span></li>
+                                    <li>Case Asus ROG Strix Hel... <span>8.200.000đ</span></li>
+                                </ul>
+                                <div class="checkout__order__subtotal">Tạm tính <span>18.150.000đ</span></div>
+                                <div class="checkout__order__subtotal">Phí giao hàng <span>Miễn phí</span></div>
+                                <div class="checkout__order__total">Tông tiền <span>18.150.000đ</span></div>
+                                <input type="button" class="btn_order" value="Đặt hàng" id="submit" onclick="order()"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Checkout Section End -->
+
+     <!-- Footer -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <div class="item_widget">
+                            <h4><b>Thông tin liên hệ</b></h4>
+                            <br />
+                            <ul>
+                                <li>Địa chỉ: 123 Đường ABC Phường XYZ Quận MNO Tp.HCM</li>
+                                <li>Hotline: +84 1900 xxxx</li>
+                                <li>Email: saigoncomputer@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="item_widget">
+                            <h4><b>Thông tin hỗ trợ</b></h4>
+                            <br />
+                            <ul>
+                                <li><b>Bảo hành</b></li>
+                                <li>+84 908 XXX XXX</li>
+                                <li><b>Chăm sóc khách hàng</b></li>
+                                <li>+84 766 XXX XXX</li>
+                                <li><b>Kỹ Thuật</b></li>
+                                <li>+84 388 XXX XXX</li>
+                                <li><b>Kế toán hóa đơn</b></li>
+                                <li>+84 768 XXX XXX</li>
+                                <li><b>Kỹ thuật Camera</b></li>
+                                <li>+84 908 XXX XXX</li>
+                                <li><b>Giao nhận đơn hàng</b></li>
+                                <li>+84 768 XXX XXX</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Bản quyền thuộc SaiGon Computer</p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/order.js"></script>
+
+</body>
+
+</html>
