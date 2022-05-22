@@ -1662,6 +1662,7 @@ ol {
 
 .content_profile .info_user .info .col_title {
 	width: 30%;
+	max-width: 150px;
 }
 .content_profile .info_user .info .col_value {
 	display: flex;
