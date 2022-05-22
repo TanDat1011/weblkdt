@@ -306,56 +306,49 @@ ol {
 	margin-right: 0;
 }
 
-.header__top__right__language {
+.dropdown {
 	position: relative;
 	display: inline-block;
 	margin-right: 40px;
 	cursor: pointer;
 }
 
-.header__top__right__language:hover ul {
+.dropdown:hover ul {
 	top: 23px;
 	opacity: 1;
 	visibility: visible;
 }
 
-.header__top__right__language:after {
-	position: absolute;
-	right: -21px;
-	top: 1px;
-	height: 20px;
-	width: 1px;
-	background: #000000;
-	opacity: 0.1;
-	content: "";
-}
-
-.header__top__right__language img {
+.dropdown img {
 	margin-right: 6px;
 }
 
-.header__top__right__language div {
-	font-size: 14px;
-	color: #1c1c1c;
+.dropdown div {
+	font-size: 18px;
+	color: black;
 	display: inline-block;
 	margin-right: 4px;
 }
 
-.header__top__right__language span {
-	font-size: 14px;
+.dropdown div i {
+	font-size: 25px;
+	margin-right: 15px;
+}
+
+.dropdown span {
+	font-size: 25px;
 	color: #1c1c1c;
 	position: relative;
 	top: 2px;
 }
 
-.header__top__right__language ul {
-	background: #222222;
-	width: 100px;
+.dropdown ul {
+	background: #0e8dc8;
+	width: 150px;
 	text-align: left;
-	padding: 5px 0;
 	position: absolute;
 	left: 0;
-	top: 43px;
+	top: 50px;
 	z-index: 9;
 	opacity: 0;
 	visibility: hidden;
@@ -366,14 +359,25 @@ ol {
 	transition: all, 0.3s;
 }
 
-.header__top__right__language ul li {
+.dropdown ul li {
+	width: 100%;
 	list-style: none;
 }
 
-.header__top__right__language ul li a {
-	font-size: 14px;
-	color: #ffffff;
-	padding: 5px 10px;
+.dropdown ul .item_dropdown {
+	font-size: 12px;
+	color: white;
+	padding: 15px 10px;
+}
+
+.dropdown ul .item_dropdown:hover {
+	color: white;
+	background-color: #51bbec;
+}
+
+.dropdown ul .item_dropdown i {
+	font-size: 18px;
+	color: white;
 }
 
 .header__top__right__auth {
@@ -399,17 +403,33 @@ ol {
 
 .header__logo {
 	display: flex;
+	flex-direction: row;
 	height: 100%;
 	align-items: flex-end;
 }
 
-.group_content_logo {
-	display: flex;
-	align-items: center;
-}
-
 .header__logo a {
 	display: inline-block;
+	color: rgb(92, 92, 92);
+}
+
+.header__logo a:hover {
+	color: rgb(92, 92, 92);
+}
+
+.header__logo i {
+	font-size: 40px;
+}
+
+.group_content_logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.group_content_logo b {
+	text-align: center;
 }
 
 .header__top ul li {
@@ -553,10 +573,6 @@ ol {
 .drawer__open {
 	display: none;
 }
-
-/*---------------------
-  menu
------------------------*/
 
 .menu {
 	padding: 20px 0;
@@ -744,18 +760,47 @@ ol {
 }
 
 .menu__item .slideshow-container {
-	max-width: 1000px;
 	position: relative;
-	margin: auto;
+	width: 100%;
 }
 
-.fade {
-	animation-name: fade;
-	animation-duration: 4s;
+.menu__item .slideshow-container img {
+	vertical-align: middle;
 }
 
 .active_slide {
 	background-color: #717171;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.prev span, .next span {
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(212, 212, 212, 0.8);
+}
+
+.prev:hover span, .next:hover span {
+	color: black;
 }
 
 .text {
@@ -774,6 +819,20 @@ ol {
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+}
+
+.btn_update_profile {
+	font-size: 18px;
+	letter-spacing: 2px;
+	width: 100%;
+	margin-top: 10px;
+	color: #ffffff;
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 13px 30px 12px;
+	background: #0e8dc8;
+	border: none;
 }
 
 @keyframes fade {
@@ -991,7 +1050,7 @@ ol {
 	margin-bottom: 35px;
 }
 
-.sidebar__item.sidebar__item__color--option {
+.sidebar__item .sidebar__item__color--option {
 	overflow: hidden;
 }
 
@@ -999,6 +1058,10 @@ ol {
 	color: #1c1c1c;
 	font-weight: 700;
 	margin-bottom: 25px;
+}
+
+.sidebar__item h4 i {
+	font-size: 40px;
 }
 
 .sidebar__item ul li {
@@ -1009,7 +1072,21 @@ ol {
 	font-size: 16px;
 	color: #1c1c1c;
 	line-height: 39px;
-	display: block;
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar__item ul li a i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	width: 40px;
+}
+
+.sidebar__item ul li .active,
+.sidebar__item ul li a:hover {
+	color: #0e8dc8;
 }
 
 .sidebar__item .latest-product__text {
@@ -1521,6 +1598,47 @@ ol {
 .product__item__text h5 {
 	color: #252525;
 	font-weight: 700;
+}
+
+.content_profile {
+	width: auto;
+}
+
+.content_profile .info_user h4 a, 
+.content_profile .info_user h4 a:hover {
+	color: black;
+}
+
+.content_profile div {
+	padding: 0;
+}
+
+.content_profile .info_user .info {
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+.content_profile .info_user .info .col_title {
+	width: 150px;
+}
+
+.content_profile .form_edit {
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.profile_input {
+	margin-bottom: 48px;
+}
+
+.profile_input input {
+	width: 100%;
+	height: 46px;
+	border: 1px solid #6e6d6d;
+	padding-left: 20px;
+	font-size: 16px;
+	color: #b2b2b2;
+	border-radius: 4px;
 }
 
 .product__pagination,
@@ -2335,7 +2453,7 @@ ol {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.menu__categories {
+	.dropdown, .menu__categories {
 		display: none;
 	}
 	.menu__categories {
@@ -2479,7 +2597,7 @@ ol {
 	.drawer__menu__widget {
 		margin-bottom: 20px;
 	}
-	.drawer__menu__widget .header__top__right__language {
+	.drawer__menu__widget .dropdown {
 		margin-right: 20px;
 	}
 	.drawer__menu__nav {
@@ -2571,7 +2689,7 @@ ol {
 }
 
 @media only screen and (max-width: 767px) {
-	.menu__categories {
+	.dropdown, .menu__categories {
 		display: none;
 	}
 	.menu__categories {
@@ -2749,7 +2867,7 @@ ol {
 	.drawer__menu__widget {
 		margin-bottom: 20px;
 	}
-	.drawer__menu__widget .header__top__right__language {
+	.drawer__menu__widget .dropdown {
 		margin-right: 20px;
 	}
 	.drawer__menu__nav {
@@ -2841,7 +2959,7 @@ ol {
 }
 
 @media only screen and (max-width: 479px) {
-	.menu__categories {
+	.dropdown, .menu__categories {
 		display: none;
 	}
 	.menu__search__form form .menu__search__categories {

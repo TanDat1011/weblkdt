@@ -144,7 +144,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 50px 15px 0 15px;
+  padding: 50px 0;
 }
 
 .wrap-login100 {
@@ -199,7 +199,7 @@ iframe {
 
 
 .login100-form {
-  width: 290px;
+  width: 400px;
 }
 
 .wrap-input100 {
@@ -218,7 +218,7 @@ iframe {
   background: #e6e6e6;
   height: 50px;
   border-radius: 25px;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .input100 .col_icon {

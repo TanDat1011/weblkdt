@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    <!-- Loading -->
-    <div id="preloder">
+     <!-- Loading -->
+     <div id="preloder">
         <div class="loader"></div>
     </div>
 
@@ -37,7 +37,7 @@
         </div>
         <div class="drawer__menu__widget">
             <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Kim Ngân</a>
+                <a href="profile.html"><i class="fa fa-user"></i> Kim Ngân</a>
             </div>
         </div>
         <div class="drawer__menu__cart">
@@ -50,10 +50,10 @@
             <ul>
                 <li>Danh mục sản phẩm
                     <ul class="header__menu__dropdown">
-                        <li><a href="#">Mainboard - Bo mạch</a></li>
-                        <li><a href="#">VGA - Card đồ hoạ</a></li>
-                        <li><a href="#">Màn hình</a></li>
-                        <li><a href="#">Case - Thùng máy</a></li>
+                        <li><a href="category.html">Mainboard - Bo mạch</a></li>
+                        <li><a href="category.html">VGA - Card đồ hoạ</a></li>
+                        <li><a href="category.html">Màn hình</a></li>
+                        <li><a href="category.html">Case - Thùng máy</a></li>
                     </ul>
                 </li>
             </ul>
@@ -76,7 +76,7 @@
     </div>
     <!-- Drawer End -->
 
-    <!-- Header Section Begin -->
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="row">
@@ -86,6 +86,19 @@
                             <a href="./index.html"><img src="img/logo.png" class="logo" alt=""></a>
                             <b class="name_logo">SAIGON COMPUTER</b>
                         </div>
+                        <a href="#">
+                            <div class="dropdown">
+                                <i class="fa fa-bars"></i>
+                                <div class="menu__categories">
+                                    <ul style="width: 240px; background-color: white; top: 50px">
+                                        <li><a href="category.html">Mainboard - Bo mạch</a></li>
+                                        <li><a href="category.html">VGA - Card đồ hoạ</a></li>
+                                        <li><a href="category.html">Màn hình</a></li>
+                                        <li><a href="category.html">Case - Thùng máy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-9 header__top">
@@ -102,7 +115,23 @@
                         <div class="header__cart">
                             <ul>
                                 <li><a href="cart-step1.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                                <li><a href="#"><i class="fa fa-user"></i>Kim Ngân</a></li>
+                                <li>
+                                    <div class="dropdown">
+                                        <div><i class="fa fa-user"></i>Kim Ngân</div>
+                                        <ul>
+                                            <li>
+                                                <a href="profile.html" class="item_dropdown">
+                                                    <i class="fa fa-user-o"></i>Tài khoản
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a onclick="signOut()" class="item_dropdown">
+                                                    <i class="fa fa-sign-out"></i>Đăng xuất
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -119,7 +148,7 @@
             </div>
         </div>
     </header>
-    <!-- Header Section End -->
+    <!-- Header -->
 
     <!-- Product Details -->
     <section class="product-details spad">
@@ -278,9 +307,11 @@
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/categories/product-4.jpg">
-                            <ul class="product__item__pic__hover">                               
-                                <li><a href="Mainboard_ROG_Strix_Z490_A.html"><i class="fa fa-search"></i></a></li>
+                        <div class="product__item__pic set-bg">
+                            <a href="Mainboard_ROG_Strix_Z490_A.html">
+                                <img src="img/categories/product-4.jpg"/>
+                            </a>
+                            <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
@@ -292,9 +323,11 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/categories/product-7.jpg">
-                            <ul class="product__item__pic__hover"> 
-                                <li><a href="Case_Cooler_Master_H500P.html"><i class="fa fa-search"></i></a></li>
+                        <div class="product__item__pic set-bg">
+                            <a href="Case_Cooler_Master_H500P.html">
+                                <img src="img/categories/product-7.jpg"/>
+                            </a>
+                            <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
@@ -306,9 +339,11 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/categories/product-6.jpg">
-                            <ul class="product__item__pic__hover">                               
-                                <li><a href="VGA_Asus_RTX_3090_24G.html"><i class="fa fa-search"></i></a></li>
+                        <div class="product__item__pic set-bg">
+                            <a href="VGA_Asus_RTX_3090_24G.html">
+                                <img src="img/categories/product-6.jpg"/>
+                            </a>
+                            <ul class="product__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
@@ -320,9 +355,11 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/categories/product-1.jpg">
+                        <div class="product__item__pic set-bg">
+                            <a href="LC27RG50FQE.html">
+                                <img src="img/categories/product-1.jpg"/>
+                            </a>
                             <ul class="product__item__pic__hover">
-                                <li><a href="LC27RG50FQE.html"><i class="fa fa-search"></i></a></li>
                                 <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                             </ul>
                         </div>
@@ -402,7 +439,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="acount-form/js/action_form.js"></script>
 
 </body>
 

@@ -177,4 +177,15 @@
         $button.parent().find('input').val(newVal);
     });
 
+    $(window).on('load', function () {
+        $('.content_profile .profile_user h4 a').on('click', function () {
+            $('.content_profile .profile_user h4 a').removeClass('active');
+            $(this).addClass('active');
+        });
+        if ($('.profile_user').length > 0) {
+            var containerEl = document.querySelector('.profile_user');
+            var mixer = mixitup(containerEl);
+        }
+    });
+
 })(jQuery);

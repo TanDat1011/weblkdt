@@ -50,3 +50,9 @@ function register() {
     return false;
   }
 }
+
+function signOut() {
+  alert("Đăng xuất tài khoản thành công");
+  window.location = "form-login.html";
+  return false;
+}
