@@ -79,15 +79,15 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row" style="align-items: flex-end">
+                <div class="col-lg-3 col_log">
                     <div class="header__logo">
                         <div class="group_content_logo">
                             <a href="./index.html"><img src="img/logo.png" class="logo" alt=""></a>
                             <b class="name_logo">SAIGON COMPUTER</b>
                         </div>
                         <a href="#">
-                            <div class="dropdown">
+                            <div class="dropdown" style="margin-right: 0">
                                 <i class="fa fa-bars"></i>
                                 <div class="menu__categories">
                                     <ul style="width: 240px; background-color: white; top: 50px">
@@ -103,6 +103,12 @@
                 </div>
                 <div class="col-lg-9 header__top">
                     <div class="header__group">
+                        <div class="menu__search__form">
+                            <form action="#">
+                                <input type="text" placeholder="Bạn tìm gì?">
+                                <button type="submit" class="site-btn">TÌM KIẾM</button>
+                            </form>
+                        </div>
                         <div class="menu__search__phone">
                             <div class="menu__search__phone__icon">
                                 <i class="fa fa-phone"></i>
@@ -135,16 +141,20 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="menu__search__form">
-                        <form action="#">
-                            <input type="text" placeholder="Bạn tìm gì?">
-                            <button type="submit" class="site-btn">TÌM KIẾM</button>
-                        </form>
+                </div>
+                <div class="drawer__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="col-lg-12 header__top_mobile">
+                    <div class="header__group">
+                        <div class="menu__search__form_mobile">
+                            <form action="#">
+                                <input type="text" placeholder="Bạn tìm gì?">
+                                <button type="submit" class="site-btn">TÌM KIẾM</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="drawer__open">
-                <i class="fa fa-bars"></i>
             </div>
         </div>
     </header>
